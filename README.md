@@ -21,6 +21,7 @@ It connects to a MyLinks API (which *is* written in Go) to fetch, add, edit, and
 
 - Android device or emulator running Android 8.0 (API level 26) or higher.
 - Java Development Kit (JDK) 21.
+- Gradle 9.8.2 (system install, no wrapper).
 - Android Studio Ladybug | 2024.2.1 or newer (recommended), or IntelliJ IDEA with Android plugin and Android SDK.
 
 ## Setup & Run

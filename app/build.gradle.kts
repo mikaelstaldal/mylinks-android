@@ -4,7 +4,6 @@ import java.util.Properties
 
 plugins {
     alias(libs.plugins.android.application)
-    alias(libs.plugins.kotlin.android)
     alias(libs.plugins.compose.compiler)
     alias(libs.plugins.ksp)
 }
@@ -51,7 +50,7 @@ android {
                 keyPassword = keyPw
             } else {
                 logger.warn(
-                    "MyMail: no shared debug signing key configured (see app/build.gradle.kts); " +
+                    "MyLinks: no shared debug signing key configured (see app/build.gradle.kts); " +
                         "falling back to the default debug keystore."
                 )
             }
@@ -84,15 +83,9 @@ android {
         sourceCompatibility = JavaVersion.VERSION_21
         targetCompatibility = JavaVersion.VERSION_21
     }
-    kotlinOptions {
-        jvmTarget = "21"
-    }
     buildFeatures {
         compose = true
         buildConfig = true
-    }
-    composeOptions {
-        kotlinCompilerExtensionVersion = "1.5.1"
     }
     packaging {
         resources {
